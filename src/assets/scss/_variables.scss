@@ -1,0 +1,22 @@
+// 変数など
+// メディアクエリ
+$pc: 'only screen and (min-width:769px) ';
+$sp: 'only screen and (max-width:768px) ';
+
+// 使用する色一覧
+$colorCorporateMain: #1417C9;
+$colorCorporateSub: #12f85f;
+$colorBaseText: #222;
+$colorBorder: #bfbfbf;
+$colorWhite: #fff;
+
+// メインフォント
+$baseFontFamily: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka",
+  "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+
+// @include flex(center, center);
+@mixin flex($justify-content: unset, $align-items: unset) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}

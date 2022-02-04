@@ -1,0 +1,66 @@
+// プロジェクト内共通scss
+html {
+  box-sizing: border-box;
+  height: 100%;
+  overflow-y: scroll;
+  font-size: 62.5%;
+}
+
+body {
+  overflow: hidden;
+  font-family: $baseFontFamily;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: $colorBaseText;
+  letter-spacing: 0.05em;
+}
+
+// bodyのmin-height:100vh対策
+div#__nuxt,
+#__layout,
+#__layout > div,
+#app {
+  min-height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+strong {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  max-width: 100%;
+  font-family: inherit;
+  font-size: 100%;
+}

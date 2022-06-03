@@ -13,17 +13,7 @@
             :key="`nav-${index}`"
             class="headerNav__item"
           >
-            <!-- 外部リンクはaタグ、アイコンを表示 -->
-            <a v-if="item.isExternal" :href="item.path" target="_blank" class="headerNav__link">
-              <span class="headerNav__link__text">
-                {{ item.label }}
-              </span>
-              <IconLaunch class="headerNav__link__icon" />
-            </a>
-            <!-- 内部リンクはnuxt-linkタグ -->
-            <nuxt-link v-else :to="item.path" class="headerNav__link">
-              {{ item.label }}
-            </nuxt-link>
+            <header-nav-link :item="item" />
           </li>
         </ul>
       </nav>
@@ -32,12 +22,8 @@
 </template>
 
 <script>
-import IconLaunch from '~/assets/img/icon_launch.svg'
 export default {
   name: 'LayoutHeader',
-  components: {
-    IconLaunch
-  },
   data () {
     return {
       links: [

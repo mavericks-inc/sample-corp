@@ -1,8 +1,6 @@
 <template>
   <div>
-    <h1 class="-title">
-      ABOUT
-    </h1>
+    <page-title label="ABOUT" />
     <div>
       <dl class="info">
         <div
@@ -81,16 +79,6 @@ export default {
     & + & {
       border-top: 2px dashed $colorBorder;
     }
-  }
-}
-
-// ページタイトル
-.-title {
-  padding: 80px 0;
-  font-size: 4rem;
-  color: $colorCorporateMain;
-  @media #{$sp} {
-    padding: 80px 0 40px;
   }
 }
 </style>
